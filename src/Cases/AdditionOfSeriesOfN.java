@@ -1,5 +1,6 @@
 package Cases;
 
+import static Util.Input.inputInteger;
 import static Util.Print.printArray;
 
 /**
@@ -9,7 +10,8 @@ import static Util.Print.printArray;
  */
 public class AdditionOfSeriesOfN {
     public static void main(String[] args) {
-        int input = 5;
+//        int input = 5;
+        int input = inputInteger();
         printArray(series(input));
     }
 

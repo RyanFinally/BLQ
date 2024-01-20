@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static Util.Convertion.convertToArrayString;
+import static Util.Input.inputString;
 import static Util.Print.printArray;
 
 /**
@@ -19,7 +20,8 @@ import static Util.Print.printArray;
 public class MountainAndValley {
     public static void main(String[] args) {
 //        String input = "N N T N N N T T T T T N T T T N T N";
-        String input = "N T T N N N T N T T";
+//        String input = "N T T N N N T N T T";
+        String input = inputString();
         countMountainAndValley(input);
     }
 

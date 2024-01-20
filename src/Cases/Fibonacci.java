@@ -5,6 +5,7 @@ import Util.Print;
 import java.util.HashMap;
 import java.util.Map;
 
+import static Util.Input.inputInteger;
 import static Util.Print.printArray;
 
 /**
@@ -15,7 +16,8 @@ import static Util.Print.printArray;
  */
 public class Fibonacci {
     public static void main(String[] args) {
-        int input = 10;
+//        int input = 10;
+        int input = inputInteger();
         printArray(fibonacci(input));
     }
 

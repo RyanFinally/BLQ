@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static Util.Input.inputInteger;
 import static Util.Print.printArray;
 
 /**
@@ -12,7 +13,8 @@ import static Util.Print.printArray;
  */
 public class PrimeNumber {
     public static void main(String[] args) {
-        int input = 10;
+//        int input = 10;
+        int input = inputInteger();
         printArray(prime(input));
     }
 
