@@ -1,3 +1,5 @@
+package Cases;
+
 import static Util.Print.printArray;
 
 /**
