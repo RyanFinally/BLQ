@@ -33,10 +33,14 @@ public class LibraryPenalty {
         bookMaximumBorrowingDays.put("C",7);
         bookMaximumBorrowingDays.put("D",7);
 
-        int aPenalty = libraryPenalty(bookMaximumBorrowingDays, aBorrowDate, aReturnDate);
-        int bPenalty = libraryPenalty(bookMaximumBorrowingDays, bBorrowDate, bReturnDate);
-        System.out.println("Penalty a: " + aPenalty);
-        System.out.println("Penalty b: " + bPenalty);
+        System.out.println("Case a " + aBorrowDate + " until " + aReturnDate);
+        libraryPenalty(bookMaximumBorrowingDays, aBorrowDate, aReturnDate);
+
+        System.out.println();
+
+        System.out.println("Case b " + bBorrowDate + " until " + bReturnDate);
+        libraryPenalty(bookMaximumBorrowingDays, bBorrowDate, bReturnDate);
+
     }
 
     private static int countDays(String borrowingDay, String returnDay){
@@ -63,13 +67,14 @@ public class LibraryPenalty {
         }
     }
 
-    public static int libraryPenalty(Map<String, Integer> bookMaximumBorrowingDays, String borrowingDate, String returnDate){
+    public static void libraryPenalty(Map<String, Integer> bookMaximumBorrowingDays, String borrowingDate, String returnDate){
         int result = 0;
         int duration = countDays(borrowingDate,returnDate);
         for(String book : bookMaximumBorrowingDays.keySet()){
             Integer maxDays = bookMaximumBorrowingDays.get(book);
+            System.out.println("Penalty book "+ book + " : " + countPenalty(maxDays,duration));
             result += countPenalty(maxDays,duration);
         }
-        return result;
+        System.out.println("Total penalty: " + result);
     }
 }
