@@ -15,6 +15,8 @@ package Cases;
  *
  * 	format input (42000, 1)
  *
+ * 	menu = {price, 1 = containsFish | 0 = noFish}
+ *
  */
 public class SplitBill {
     public static void main(String[] args) {

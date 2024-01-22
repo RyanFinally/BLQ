@@ -29,7 +29,6 @@ public class PaperRockScissor {
         int initialDistance = 2;
         String[] aCombination = new String[]{"G", "G", "G"};
         String[] bCombination = new String[]{"K", "K", "B"};
-        String[] strings = trackWinner(aCombination, bCombination);
 
         paperRockScissor(initialDistance, aCombination, bCombination);
     }

@@ -1,6 +1,7 @@
 package Cases;
 
 import static Util.Convertion.convertToArrayString;
+import static Util.Input.inputString;
 import static Util.Print.printArray;
 
 /**
@@ -11,7 +12,8 @@ import static Util.Print.printArray;
 
 public class SortItOut {
     public static void main(String[] args) {
-        String input = "1 2 1 3 4 7 1 1 5 6 1 8";
+//        String input = "1 2 1 3 4 7 1 1 5 6 1 8";
+        String input = inputString();
         sortItOut(input);
     }
 

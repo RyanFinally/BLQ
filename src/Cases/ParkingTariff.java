@@ -10,6 +10,9 @@ import static Util.Input.inputString;
 
 public class ParkingTariff {
     public static void main(String[] args) {
+//        String in = "27 Januari 2019 | 05:00:01";
+//        String out = "27 Januari 2019 | 17:45:03";
+
         Scanner scanner = new Scanner(System.in);
         String in  = scanner.nextLine();
         String out = scanner.nextLine();
