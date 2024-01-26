@@ -58,10 +58,7 @@ public class SplitBill {
             }
         }
         allergicBill = nonAllergicSum/(totalPerson);
-        System.out.println(allergicBill);
         nonAllergicBill = allergicBill + (allergicSum/(totalPerson-allergicPerson));
-        System.out.println(allergicSum);
-        System.out.println(nonAllergicBill);
 
         return new float[]{allergicBill,nonAllergicBill};
     }

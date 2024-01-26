@@ -7,8 +7,8 @@ import static Util.Input.inputString;
 
 public class ChangeTimeFormat {
     public static void main(String[] args) {
-        String input = "03:40:44 PM";
-//        String input = inputString();
+//        String input = "03:40:44 PM";
+        String input = inputString();
         changeTimeFormat(input);
     }
 

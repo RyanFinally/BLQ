@@ -35,7 +35,7 @@ public class MaximumItemPurchased {
         System.out.println(caseMaximumItemPurchased(items, N));
     }
 
-    private static int caseMaximumItemPurchased(int[][] items, int targetSum) {
+    public static int caseMaximumItemPurchased(int[][] items, int targetSum) {
         int dimensions = items.length;
         int[][] dp = new int[dimensions + 1][targetSum + 1];
 
