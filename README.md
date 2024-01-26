@@ -22,3 +22,6 @@ Here are the answer of each questions
 20. PaperRockScissor
 21. WalkAndJumpGame
 22. FibonacciCandles
+
+
+*To quickly see each answer open the src/Test*
